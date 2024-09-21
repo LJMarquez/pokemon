@@ -1,4 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
 body {
-    margin: 0;
-    background-color: lightgreen;
+  margin: 0;
+  background-color: lightgreen;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+  /* color: white; */
+  text-align: center;
+  font-size: 5em;
+}
+
+#selected-name {
+  margin-top: -5vh;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+  font-size: 2em;
+}
+
+#starters-wrapper {
+  width: 50vw;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starter-div {
+  display: inline;
+  height: 30vh;
+}
+
+.starter-img {
+  margin: auto;
+  width: 75%;
+  transition: width 0.5s;
+  transform-origin: center center;
+}
+
+.starter-img:hover {
+  width: 80%;
+}
+
+#selected {
+  margin: auto;
+  width: 50vw;
+  height: 30vh;
+  text-align: center;
+}
+
+#confirm-button {
+  margin: auto;
+  width: 15vw;
+  text-align: center;
+  transition: color .5s, background-color .5s, border .5s;
+  button {
+      font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: regular;
+      font-style: normal;
+      font-size: 2em;
+      background-color: red;
+      color: white;
+      border: .5vh solid white;
+      padding: 2vh;
+      border-radius: 5em;
+  }
+}
+
+button:hover {
+    cursor: pointer;
 }
